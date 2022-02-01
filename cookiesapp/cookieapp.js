@@ -1,6 +1,7 @@
 //express, cookie-parser
 const express = require("express")
 const cookierParser = require("cookie-parser")
+const res = require("express/lib/response")
 var port = process.env.PORT|| 3999
 
 //creting server
@@ -87,8 +88,8 @@ app.get("/deleteall", function(req, res){
 app.listen(port, function(err){
     if(err)
     {
-        console.log("Err in starting the server")
+        res.send("Err in starting the server")
         return
     }
-    console.log("server started at port : ", port)
+    res.send("server started at port : ", port)
 })
