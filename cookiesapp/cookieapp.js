@@ -51,11 +51,6 @@ app.get("/add", function(req, res){
     res.send("Cookie created")
 })
 
-// app.get("/get", function(req, res){
-//     //reading the cookies information from the browser
-//     res.send(req.cookies["odiTeam"])
-
-// })
 
 //seeing all cookies in browser
 app.get("/viewall", function(req,res){
